@@ -57,7 +57,7 @@ const devConfig = {
     contentBase: './public/',
     historyApiFallback: true
   },
-  devtool: 'eval-source-map' // https://webpack.js.org/configuration/devtool/#devtool
+  devtool: 'source-map' // https://webpack.js.org/configuration/devtool/#devtool
 };
 const prodConfig = {
   module: {

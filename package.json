@@ -10,6 +10,7 @@
   },
   "scripts": {
     "build": "webpack --config webpack.config.js --env.production --mode=production",
+    "buildDev": "webpack --config webpack.config.js --env.development --mode=development",
     "start": "webpack-dev-server --env.local",
     "lint": "eslint src/",
     "lint-fix": "eslint src/ --fix"
