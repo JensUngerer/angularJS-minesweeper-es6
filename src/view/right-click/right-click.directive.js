@@ -2,6 +2,7 @@ import angular from 'angular';
 
 // https://stackoverflow.com/questions/28620479/using-es6-classes-as-angular-1-x-directives
 // https://github.com/michaelbromley/michaelbromley.co.uk/blob/master/content/blog/2015-01-28-exploring-es6-classes-in-angularjs-1-x.md
+// https://stackoverflow.com/questions/45170610/how-to-inject-into-a-directive-controller-in-es6
 export class RightClickDirective {
   static get restrict() {
     return 'A';
@@ -35,7 +36,6 @@ export class RightClickDirective {
 }
 
 RightClickDirective.directiveFactory.$inject = ['$parse'];
-// https://stackoverflow.com/questions/45170610/how-to-inject-into-a-directive-controller-in-es6
 export default angular
   .module('right-click.directive', [])
   .directive('rightClick', RightClickDirective.directiveFactory).name;
