@@ -12,6 +12,7 @@
     "build": "webpack --config webpack.config.js --env.production --mode=production",
     "buildDev": "webpack --config webpack.config.js --env.development --mode=development",
     "start": "webpack-dev-server --env.local",
+    "startDev": "cls && npm run buildDev && run.bat",
     "lint": "eslint src/",
     "lint-fix": "eslint src/ --fix"
   },
