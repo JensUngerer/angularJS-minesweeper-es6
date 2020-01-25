@@ -10,26 +10,29 @@ import 'angular-local-storage';
 
 // import './common/app.scss';
 
-angular
+const appModule = angular
   .module(config.appName, [
     rightClickDirective,
     // views,
     persistentComponents,
     'ui.router',
     'LocalStorageModule'
-  ])
-  .config(['$stateProvider', '$locationProvider', ($stateProvider, $locationProvider) => {
-    Object.keys(config.stateUrls).forEach(stateKey => {
-      $stateProvider.state({
-        name: stateKey,
-        component: stateKey,
-        url: config.stateUrls[stateKey]
-      });
-    });
+  ]);
 
-    $locationProvider.html5Mode(true);
-  }]);
+  // appModule.config(['$stateProvider', '$locationProvider', ($stateProvider, $locationProvider) => {
+  //   Object.keys(config.stateUrls).forEach(stateKey => {
+  //     $stateProvider.state({
+  //       name: stateKey,
+  //       component: stateKey,
+  //       url: config.stateUrls[stateKey]
+  //     });
+  //   });
+
+  //   $locationProvider.html5Mode(true);
+  // }]);
 
 angular.element(document).ready(() => {
   angular.bootstrap(document, [config.appName], { strictDi: true });
 });
+
+export default appModule.name;

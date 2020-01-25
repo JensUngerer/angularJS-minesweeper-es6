@@ -1,5 +1,5 @@
 export default {
-  appName: 'app'//,
+  appName: 'angularJS-minesweeper'//,
   // api: {
   //   base: 'https://jsonplaceholder.typicode.com/',
   //   resources: {

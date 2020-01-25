@@ -1,12 +1,13 @@
 import angular from 'angular';
-import template from './minesweeper-field.component.html';
+// import template from './minesweeper-field.component.html';
 import './minesweeper-field.component.scss';
 import { MinesweeperFieldState } from './../../logic/minesweeper-field-state/minesweeper-field-state';
 
 export class MinesweeperFieldComponent {
   // setup component properties
-  static get template() {
-    return template;
+  static get templateUrl() {
+    // return template;
+    return './minesweeper-field.component.html';
   }
   //   static get controllerAs() {
   //     return 'minesweeperGameCtrl';
