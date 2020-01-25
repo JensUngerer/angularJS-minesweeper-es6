@@ -6,10 +6,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import config from './../../../src/common/config';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +29,5 @@ export class AppModule {
   ngDoBootstrap() {
     this.upgrade.bootstrap(document.body, [config.appName], { strictDi: true});
   }
-
-
  }
+
