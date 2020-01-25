@@ -1,19 +1,19 @@
 import angular from 'angular';
 import config from './common/config';
 
-import views from './views/views.module';
+// import views from './views/views.module';
 import persistentComponents from './components/persistent-components.module';
 import rightClickDirective from './view/right-click/right-click.directive';
 
 import '@uirouter/angularjs';
 import 'angular-local-storage';
 
-import './common/app.scss';
+// import './common/app.scss';
 
 angular
   .module(config.appName, [
     rightClickDirective,
-    views,
+    // views,
     persistentComponents,
     'ui.router',
     'LocalStorageModule'
