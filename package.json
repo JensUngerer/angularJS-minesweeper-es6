@@ -15,8 +15,19 @@
     "lint": "eslint src/",
     "lint-fix": "eslint src/ --fix"
   },
+  "babel": {
+    "plugins": [
+      [
+        "@babel/plugin-proposal-class-properties",
+        {
+          "loose": true
+        }
+      ]
+    ]
+  },
   "devDependencies": {
     "@babel/core": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-env": "^7.7.7",
     "@uirouter/angularjs": "^1.0.24",
     "angular": "^1.7.9",
