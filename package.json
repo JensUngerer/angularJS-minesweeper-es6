@@ -27,9 +27,9 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9",
+    "@babel/core": "^7.12.10",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
-    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-env": "^7.12.10",
     "@uirouter/angularjs": "^1.0.28",
     "angular": "^1.8.2",
     "angular-local-storage": "^0.7.1",
@@ -56,6 +56,6 @@
     "dot-prop": "^6.0.1",
     "kind-of": "^6.0.3",
     "minimist": "^1.2.5",
-    "systeminformation": "^4.31.0"
+    "systeminformation": "^4.31.1"
   }
 }
